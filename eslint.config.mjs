@@ -7,7 +7,7 @@ const svelteFiles = ["**/*.svelte", "**/*.svelte.ts"];
 
 export default [
 	{
-		ignores: ["coverage/", "build/", ".svelte-kit/"],
+		ignores: ["coverage/", "build/", ".svelte-kit/", "local/"],
 	},
 	...biffud,
 	...svelte.configs.recommended,
