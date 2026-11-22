@@ -1,0 +1,39 @@
+{
+	"title": "Advent calendar bears",
+	"description": "Hang the strings of advent bears and fill them with chocolate and candy.",
+	"category": "home",
+	"date": "11-30",
+	"estimatedCostDollars": 100,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{
+			"title": "Order candy online",
+			"description": "Look for and purchase any international candy.",
+			"daysBefore": 21
+		},
+		{
+			"title": "Buy candy in person",
+			"description": "Buy candy from local small shops.",
+			"daysBefore": 7
+		},
+		{ "title": "Take the bears out of storage", "daysBefore": 1 },
+		{ "title": "Review mounting locations", "daysBefore": 1 },
+		{ "title": "Mount Ida's bears (fireplace)", "daysBefore": 1 },
+		{ "title": "Mount Emmie's bears (side wall)", "daysBefore": 1 },
+		{ "title": "Mount Orla's bears (front wall)", "daysBefore": 1 },
+		{
+			"title": "Fill the bears",
+			"description": "Parents discreetly fill them that night.",
+			"daysBefore": 0
+		}
+	],
+	"checklist": [
+		"Maple lollipops (Canada)",
+		"Kinder chocolate (Italy)",
+		"German chocolates (Germany)",
+		"Local chocolates (Mueller Chocolate Co.)",
+		"Local candies (Zipf's Candies)"
+	],
+	"traditionLevel": 5,
+	"phases": ["preparation"]
+}
