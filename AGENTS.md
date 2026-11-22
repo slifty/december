@@ -21,6 +21,7 @@ If a task seems to need one, leave it out and say so.
 - ESLint (flat config) with `@biffud/eslint-config` and `eslint-plugin-svelte`
 - Prettier for formatting, with `prettier-plugin-svelte`
 - Vitest for tests
+- Zod for data schemas and the types derived from them
 
 ## The Site
 
@@ -47,15 +48,41 @@ subpath imports. Modules inside `src/lib` import each other relatively.
 src/
 ├── app.css            # Global styles
 ├── app.html
-└── routes/
-    ├── +layout.ts     # Prerender everything
-    ├── +layout.svelte # Loads app.css
-    └── +page.svelte   # Home page
+├── routes/
+│   ├── +layout.ts     # Prerender everything
+│   ├── +layout.svelte # Loads app.css
+│   └── +page.svelte   # Home page
+└── lib/
+    ├── dates.ts       # Year-less MM-DD dates
+    └── schemas/       # Zod schemas for each entity, and their inferred types
 ```
 
 **Styling is deliberately plain.** Browser defaults, a sans-serif font, black
 on white. The visual design hasn't been done yet, so don't add colours, custom
 fonts, or decorative styling. Add only the layout a feature needs to work.
+
+## Data
+
+Each entity is a Zod schema in `src/lib/schemas/`, and its TypeScript type is
+inferred from the schema with `z.infer`, never written separately. The schemas
+are the documentation of the data model; don't restate their fields elsewhere.
+[docs/SCHEMAS.md](docs/SCHEMAS.md) explains in plain language what each schema is
+for, with a link to its file. Keep it current when a schema is added, removed,
+or changes purpose.
+
+- **Files, not a database.** Data is JSON in the repository, validated by the
+  schemas at build time.
+- **Describe the activity, not one year of it.** The same data works year
+  after year, so schemas hold no state (done, skipped, watched, actual cost)
+  and no date carries a year: dates are `MM-DD`, and timing is counted in days
+  relative to a date the entry names.
+- **Non-denominational where possible.** Don't build a particular holiday into
+  the schemas; let the data name the dates that matter to it.
+- **Schemas are strict.** Unknown fields are errors, which keeps state and
+  stray personal details out of the data.
+- **Fixed vocabularies live in code.** Phases, categories, and participants
+  are `z.enum` schemas, not data files.
+- **Participants are who takes part**, never who is responsible.
 
 ## After Making Changes
 
