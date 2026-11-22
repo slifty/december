@@ -50,6 +50,29 @@ repository's Pages source must be set to "GitHub Actions".
 - **Formatting is Prettier's**, with tabs and double quotes from
   `.editorconfig`. Don't hand-format.
 
+## Commit messages
+
+Commits follow [Conventional Commits](https://www.conventionalcommits.org/),
+with one addition: commits that change data are scoped to the entity they
+touch.
+
+```
+feat(activity): Add putting up lights
+fix(activity): Correct the lights checklist
+feat(schema): Add a home category for activities
+docs: Adopt Conventional Commits
+```
+
+- **Types:** `feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, and
+  `chore`.
+- **Data:** adding an entry is `feat(<entity>)`, and correcting or updating
+  one is `fix(<entity>)`, with the entity named as its schema is (`activity`,
+  `shopping-location`).
+- **Code:** a scope is optional; use one when it narrows things down, such as
+  `schema` for changes to the data model.
+- **Description:** imperative mood, capitalized, no trailing period. Keep the
+  whole subject line within 50 characters.
+
 ## Dependency constraints
 
 - **TypeScript stays on 6.x** until `typescript-eslint` supports TypeScript 7.
