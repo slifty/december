@@ -1,0 +1,44 @@
+{
+	"title": "Putting up lights",
+	"description": "Drudge up the lights, test them, and ultimately deploy them.",
+	"category": "home",
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{
+			"title": "Determine Christmas light type according to the Annual Rotation Treaty (A.R.T.)",
+			"description": "White in even years, color in odd years.",
+			"daysBefore": 15
+		},
+		{ "title": "Review intended locations", "daysBefore": 14 },
+		{
+			"title": "Discuss light location expansions with household decision makers",
+			"daysBefore": 12
+		},
+		{
+			"title": "Audit current light inventory compared to intended deployment zones",
+			"description": "Include smart switches and extension cables, and make sure there are lights for the Christmas tree.",
+			"daysBefore": 10
+		},
+		{
+			"title": "Purchase equipment to address identified deficiencies",
+			"daysBefore": 7
+		}
+	],
+	"checklist": [
+		"Living room front window (left)",
+		"Living room front window (right)",
+		"Living room side window (left)",
+		"Living room side window (right)",
+		"Living room ceiling",
+		"Living room railing",
+		"Dining room windows",
+		"Kitchen windows (sink)",
+		"Kitchen windows (table)",
+		"Outdoor railing",
+		"Screened in porch"
+	],
+	"traditionLevel": 5,
+	"phases": ["preparation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -33, "toDays": -24 }
+}

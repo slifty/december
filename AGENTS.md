@@ -53,6 +53,7 @@ src/
 │   ├── +layout.svelte # Loads app.css
 │   └── +page.svelte   # Home page
 └── lib/
+    ├── data/          # One JSON file per entry, loaded and validated
     ├── dates.ts       # Year-less MM-DD dates
     └── schemas/       # Zod schemas for each entity, and their inferred types
 ```
