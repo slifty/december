@@ -39,3 +39,12 @@ We do be buying things.
 - `name`: The name of the seasonal phase
 - `start`: The monthDay the seasonal phase starts
 - `end`: The monthDay the seasonal phase ends
+
+## [Category](../src/lib/schemas/category.ts)
+
+What it takes to get to the activity.
+
+- `home`: We don't have to drive anywhere.
+- `indoor`: We have to drive somewhere, but we don't need to bundle up.
+- `outdoor`: Bundle up for the cold.
+- `movie`: Popcorn and a screen.
