@@ -1,0 +1,47 @@
+{
+	"title": "The Nutcracker",
+	"description": "See Philadelphia Ballet's George Balanchine's The Nutcracker.",
+	"category": "indoor",
+	"location": {
+		"name": "Academy of Music",
+		"address": "240 S Broad St, Philadelphia, PA 19102",
+		"url": "https://philadelphiaballet.org"
+	},
+	"durationMinutes": 120,
+	"participants": ["duey-schultzes", "schultzes"],
+	"advanceSteps": [
+		{ "title": "Buy tickets", "daysBefore": 21 },
+		{ "title": "Obtain Life Savers", "daysBefore": 7 },
+		{ "title": "Select one roll of Life Savers per child", "daysBefore": 0 },
+		{ "title": "Dress in fancy outfits", "daysBefore": 0 }
+	],
+	"checklist": [
+		"Take picture with Mouse King",
+		"Take picture with Sugar Plum Fairy",
+		"Reflect on any differences we noticed in the performance this year",
+		"Observe whether Nutcracker stabbed Mouse King in back or had an honorable victory",
+		"Count the number of candy cane hula hoop spins in peak jump",
+		"Shout bravo when the conductor gets on the stage during curtain call"
+	],
+	"variants": [
+		{
+			"name": "Amphitheatre",
+			"description": "The top tier, farthest from the stage.",
+			"estimatedCostDollars": 250
+		},
+		{
+			"name": "Balcony",
+			"description": "The middle tiers, with a full view of the stage.",
+			"estimatedCostDollars": 450
+		},
+		{
+			"name": "Parquet",
+			"description": "The orchestra level, closest to the stage.",
+			"estimatedCostDollars": 750
+		}
+	],
+	"traditionLevel": 5,
+	"phases": ["growing-anticipation", "the-season", "new-year"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -21, "toDays": 6 },
+	"timesOfDay": ["afternoon", "evening"]
+}
