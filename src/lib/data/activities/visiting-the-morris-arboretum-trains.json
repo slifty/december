@@ -26,7 +26,7 @@
 			"estimatedMemberCostDollars": 64
 		}
 	],
-	"traditionLevel": 1,
+	"traditionLevel": 2,
 	"phases": ["preparation", "growing-anticipation", "the-season"],
 	"sweetSpot": { "relativeTo": "12-25", "fromDays": -33, "toDays": -2 }
 }
