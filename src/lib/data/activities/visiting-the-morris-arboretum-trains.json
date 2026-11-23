@@ -17,13 +17,15 @@
 			"name": "Daytime",
 			"description": "Included with general admission, no advance tickets needed.",
 			"estimatedCostDollars": 80,
-			"estimatedMemberCostDollars": 0
+			"estimatedMemberCostDollars": 0,
+			"timesOfDay": ["morning", "afternoon"]
 		},
 		{
 			"name": "Nighttime Express",
 			"description": "The railway lit up after dark on select evenings, with timed tickets bought in advance.",
 			"estimatedCostDollars": 80,
-			"estimatedMemberCostDollars": 64
+			"estimatedMemberCostDollars": 64,
+			"timesOfDay": ["evening"]
 		}
 	],
 	"traditionLevel": 2,
