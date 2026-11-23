@@ -33,6 +33,15 @@ describe("activitySchema", () => {
 		).toBe(true);
 	});
 
+	it("accepts an activity with a location", () => {
+		expect(
+			activitySchema.safeParse({
+				...validActivity,
+				location: { name: "TEST place", url: "https://example.com" },
+			}).success,
+		).toBe(true);
+	});
+
 	it("accepts an activity with no phases", () => {
 		expect(
 			activitySchema.safeParse({ ...validActivity, phases: [] }).success,
@@ -55,6 +64,7 @@ describe("activitySchema", () => {
 			"a sweet spot relative to a date that doesn't exist",
 			{ sweetSpot: { relativeTo: "13-01", fromDays: -7, toDays: -1 } },
 		],
+		["a location with no name", { location: { url: "https://example.com" } }],
 		["a field the schema doesn't know", { done: true }],
 	])("rejects %s", (_, override) => {
 		expect(

@@ -1,10 +1,8 @@
 import { z } from "zod";
+import { locationSchema } from "./location.ts";
 
-export const shoppingLocationSchema = z.strictObject({
-	name: z.string().min(1),
+export const shoppingLocationSchema = locationSchema.extend({
 	goFor: z.string().min(1),
-	address: z.string().min(1).optional(),
-	url: z.url().optional(),
 });
 
 export type ShoppingLocation = z.infer<typeof shoppingLocationSchema>;
