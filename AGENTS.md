@@ -53,9 +53,11 @@ src/
 │   ├── +layout.svelte # Loads app.css
 │   └── +page.svelte   # Home page
 └── lib/
+    ├── components/    # Svelte components
     ├── data/          # One JSON file per entry, loaded and validated
     ├── dates.ts       # Year-less MM-DD dates
-    └── schemas/       # Zod schemas for each entity, and their inferred types
+    ├── schemas/       # Zod schemas for each entity, and their inferred types
+    └── timeline.ts    # Orders activities by when in the season they happen
 ```
 
 **Styling is deliberately plain.** Browser defaults, a sans-serif font, black
