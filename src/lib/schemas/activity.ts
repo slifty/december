@@ -42,6 +42,7 @@ export const activitySchema = z.strictObject({
 			message: "fromDays must not be after toDays",
 		})
 		.optional(),
+	narrowlyScheduled: z.boolean().default(false),
 });
 
 export type Activity = z.infer<typeof activitySchema>;

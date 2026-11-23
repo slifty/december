@@ -30,6 +30,7 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
   - `relativeTo`: The date that defines the sweet spot range.
   - `fromDays`: The earliest day, relative to the central date, that it would still be OK to do this activity.
   - `toDays`: The latest day, relative to the central date, that it would still be OK to do this activity.
+- `narrowlyScheduled`: Does this only happen on a single day or weekend, rather than whenever we choose?
 
 ## [Variant](../src/lib/schemas/variant.ts)
 

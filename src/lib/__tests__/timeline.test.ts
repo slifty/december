@@ -15,6 +15,7 @@ const makeActivity = (overrides: Partial<Activity>): Activity => ({
 	variants: [],
 	traditionLevel: 0,
 	phases: [],
+	narrowlyScheduled: false,
 	...overrides,
 });
 
