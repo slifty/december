@@ -1,0 +1,31 @@
+{
+	"title": "Visiting the Swedish Christmas market",
+	"description": "Visit the American Swedish Historical Museum's Lucia & Christmas Market.",
+	"category": "indoor",
+	"location": {
+		"name": "American Swedish Historical Museum",
+		"address": "1900 Pattison Ave, Philadelphia, PA 19145",
+		"url": "https://www.americanswedish.org"
+	},
+	"durationMinutes": 180,
+	"estimatedCostDollars": 30,
+	"estimatedMemberCostDollars": 26,
+	"participants": ["duey-schultzes", "darraghs", "webb-dueys"],
+	"advanceSteps": [
+		{
+			"title": "Look up the dates of the market, schedule the event, and confirm participation numbers",
+			"daysBefore": 30
+		},
+		{ "title": "Buy tickets", "daysBefore": 14 }
+	],
+	"checklist": [
+		"Browse the market",
+		"Buy a bottle of glögg",
+		"Watch the Lucia performance",
+		"Eat Swedish meatballs"
+	],
+	"traditionLevel": 3,
+	"phases": ["growing-anticipation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -24, "toDays": -18 },
+	"narrowlyScheduled": true
+}
