@@ -42,6 +42,10 @@
 				{activity.sweetSpot.relativeTo}
 			</dd>
 		{/if}
+		{#if activity.narrowlyScheduled}
+			<dt>Scheduling</dt>
+			<dd>Only on set dates</dd>
+		{/if}
 		<dt>Phases</dt>
 		<dd>
 			{activity.phases.map((phaseId) => PHASES[phaseId].name).join(", ")}
