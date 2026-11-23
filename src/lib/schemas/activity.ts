@@ -4,6 +4,7 @@ import { categorySchema } from "./category.ts";
 import { locationSchema } from "./location.ts";
 import { participantSchema } from "./participant.ts";
 import { phaseIdSchema } from "./phase.ts";
+import { timeOfDaySchema } from "./time-of-day.ts";
 import { variantSchema } from "./variant.ts";
 
 const MIN_TRADITION_LEVEL = 0;
@@ -43,6 +44,7 @@ export const activitySchema = z.strictObject({
 		})
 		.optional(),
 	narrowlyScheduled: z.boolean().default(false),
+	timesOfDay: z.array(timeOfDaySchema).min(1).optional(),
 });
 
 export type Activity = z.infer<typeof activitySchema>;

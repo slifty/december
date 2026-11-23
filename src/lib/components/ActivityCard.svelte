@@ -46,6 +46,10 @@
 			<dt>Scheduling</dt>
 			<dd>Only on set dates</dd>
 		{/if}
+		{#if activity.timesOfDay !== undefined}
+			<dt>Time of day</dt>
+			<dd>{activity.timesOfDay.join(", ")}</dd>
+		{/if}
 		<dt>Phases</dt>
 		<dd>
 			{activity.phases.map((phaseId) => PHASES[phaseId].name).join(", ")}
@@ -106,6 +110,10 @@
 						{#if variant.estimatedMemberCostDollars !== undefined}
 							<dt>Cost (with membership)</dt>
 							<dd>${variant.estimatedMemberCostDollars}</dd>
+						{/if}
+						{#if variant.timesOfDay !== undefined}
+							<dt>Time of day</dt>
+							<dd>{variant.timesOfDay.join(", ")}</dd>
 						{/if}
 					</dl>
 				</li>

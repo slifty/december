@@ -70,6 +70,16 @@ describe("activitySchema", () => {
 		).toBe(true);
 	});
 
+	it("accepts times of day on an activity and its variants", () => {
+		expect(
+			activitySchema.safeParse({
+				...validActivity,
+				timesOfDay: ["morning", "after-bedtime"],
+				variants: [{ name: "TEST variant", timesOfDay: ["evening"] }],
+			}).success,
+		).toBe(true);
+	});
+
 	it("accepts an activity with no phases", () => {
 		expect(
 			activitySchema.safeParse({ ...validActivity, phases: [] }).success,
@@ -91,6 +101,12 @@ describe("activitySchema", () => {
 		[
 			"a sweet spot relative to a date that doesn't exist",
 			{ sweetSpot: { relativeTo: "13-01", fromDays: -7, toDays: -1 } },
+		],
+		["an unknown time of day", { timesOfDay: ["TEST-time"] }],
+		["an empty list of times of day", { timesOfDay: [] }],
+		[
+			"a variant with an unknown time of day",
+			{ variants: [{ name: "TEST variant", timesOfDay: ["TEST-time"] }] },
 		],
 		["a location with no name", { location: { url: "https://example.com" } }],
 		["a variant with no name", { variants: [{ estimatedCostDollars: 50 }] }],

@@ -31,6 +31,7 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
   - `fromDays`: The earliest day, relative to the central date, that it would still be OK to do this activity.
   - `toDays`: The latest day, relative to the central date, that it would still be OK to do this activity.
 - `narrowlyScheduled`: Does this only happen on a single day or weekend, rather than whenever we choose?
+- `timesOfDay`: When in the day can we do this? One or more [times of day](#time-of-day).
 
 ## [Variant](../src/lib/schemas/variant.ts)
 
@@ -41,6 +42,7 @@ One way to do an [activity](#activity) that can be done more than one way, such 
 - `location`: Where do we have to go to do it this way? A [location](#location).
 - `estimatedCostDollars`: How much does doing it this way set us back?
 - `estimatedMemberCostDollars`: How much does doing it this way set us back if we're members?
+- `timesOfDay`: When in the day can we do it this way? One or more [times of day](#time-of-day).
 
 ## [Shopping Location](../src/lib/schemas/shopping-location.ts)
 
@@ -70,3 +72,12 @@ What it takes to get to the activity.
 - `indoor`: We have to drive somewhere, but we don't need to bundle up.
 - `outdoor`: Bundle up for the cold.
 - `movie`: Popcorn and a screen.
+
+## [Time of Day](../src/lib/schemas/time-of-day.ts)
+
+Roughly when in the day something happens.
+
+- `morning`: Before lunch.
+- `afternoon`: Between lunch and dinner.
+- `evening`: After dinner, while the kids are still up.
+- `after-bedtime`: Once the kids are asleep.
