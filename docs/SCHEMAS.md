@@ -16,6 +16,7 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
   - `url`: Where on the internet is it?
 - `durationMinutes`: Exactly how long is this going to last, anyway?
 - `estimatedCostDollars`: How much is this going to set us back on our revenue goals for the year?
+- `estimatedMemberCostDollars`: How much is this going to set us back if we're members?
 - `participants`: Who are you roping into this?
 - `advanceSteps`: What needs to get done ahead of time to make this activity possible?
   - `title`: What has to get done?
@@ -38,6 +39,7 @@ One way to do an [activity](#activity) that can be done more than one way, such 
 - `description`: What makes this version different?
 - `location`: Where do we have to go to do it this way? A [location](#location).
 - `estimatedCostDollars`: How much does doing it this way set us back?
+- `estimatedMemberCostDollars`: How much does doing it this way set us back if we're members?
 
 ## [Shopping Location](../src/lib/schemas/shopping-location.ts)
 

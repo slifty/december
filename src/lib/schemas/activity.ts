@@ -17,6 +17,7 @@ export const activitySchema = z.strictObject({
 	location: locationSchema.optional(),
 	durationMinutes: z.int().positive().optional(),
 	estimatedCostDollars: z.int().nonnegative().optional(),
+	estimatedMemberCostDollars: z.int().nonnegative().optional(),
 	participants: z.array(participantSchema),
 	advanceSteps: z
 		.array(

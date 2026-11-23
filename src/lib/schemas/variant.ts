@@ -6,6 +6,7 @@ export const variantSchema = z.strictObject({
 	description: z.string().min(1).optional(),
 	location: locationSchema.optional(),
 	estimatedCostDollars: z.int().nonnegative().optional(),
+	estimatedMemberCostDollars: z.int().nonnegative().optional(),
 });
 
 export type Variant = z.infer<typeof variantSchema>;

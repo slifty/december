@@ -9,6 +9,7 @@ const validActivity = {
 	sweetSpot: { relativeTo: "12-25", fromDays: -10, toDays: -7 },
 	durationMinutes: 180,
 	estimatedCostDollars: 200,
+	estimatedMemberCostDollars: 150,
 	participants: ["duey-schultzes"],
 	advanceSteps: [{ title: "TEST step", daysBefore: 30 }],
 };
@@ -53,6 +54,7 @@ describe("activitySchema", () => {
 						description: "TEST description",
 						location: { name: "TEST place" },
 						estimatedCostDollars: 50,
+						estimatedMemberCostDollars: 0,
 					},
 					{ name: "TEST bare variant" },
 				],

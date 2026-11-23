@@ -54,6 +54,10 @@
 			<dt>Estimated cost</dt>
 			<dd>${activity.estimatedCostDollars}</dd>
 		{/if}
+		{#if activity.estimatedMemberCostDollars !== undefined}
+			<dt>Cost (with membership)</dt>
+			<dd>${activity.estimatedMemberCostDollars}</dd>
+		{/if}
 		<dt>Participants</dt>
 		<dd>{activity.participants.join(", ")}</dd>
 		<dt>Tradition level</dt>
@@ -94,6 +98,10 @@
 						{#if variant.estimatedCostDollars !== undefined}
 							<dt>Estimated cost</dt>
 							<dd>${variant.estimatedCostDollars}</dd>
+						{/if}
+						{#if variant.estimatedMemberCostDollars !== undefined}
+							<dt>Cost (with membership)</dt>
+							<dd>${variant.estimatedMemberCostDollars}</dd>
 						{/if}
 					</dl>
 				</li>
