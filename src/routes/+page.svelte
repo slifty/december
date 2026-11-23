@@ -1,6 +1,18 @@
+<script lang="ts">
+	import ActivityCard from "#lib/components/ActivityCard.svelte";
+	import { ACTIVITIES } from "#lib/data/activities.ts";
+	import { sortByTimeline } from "#lib/timeline.ts";
+
+	const activities = sortByTimeline(ACTIVITIES);
+</script>
+
 <svelte:head>
 	<title>December</title>
 </svelte:head>
 
 <h1>December</h1>
 <p>This stuff doesn't all just happen by itself...</p>
+
+{#each activities as activity (activity.title)}
+	<ActivityCard {activity} />
+{/each}
