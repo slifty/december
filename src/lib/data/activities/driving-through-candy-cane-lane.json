@@ -1,0 +1,29 @@
+{
+	"title": "Driving through Candy Cane Lane",
+	"description": "Drive through neighborhoods decked out in lights.",
+	"category": "outdoor",
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{
+			"title": "Set up a holiday playlist that can play in the car",
+			"daysBefore": 0
+		},
+		{ "title": "Pack cookies", "daysBefore": 0 },
+		{ "title": "Make hot chocolate and put it in a container", "daysBefore": 0 }
+	],
+	"variants": [
+		{
+			"name": "Oreland",
+			"description": "The Springfield Township stretch of Garth Road near Bruce Road.",
+			"location": {
+				"name": "Garth Road, Oreland",
+				"address": "100–300 blocks of Garth Rd, Oreland, PA 19075"
+			}
+		}
+	],
+	"traditionLevel": 2,
+	"phases": ["growing-anticipation", "the-season"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -18, "toDays": -1 },
+	"timesOfDay": ["evening"]
+}
