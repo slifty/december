@@ -1,0 +1,29 @@
+{
+	"title": "Visiting the Morris Arboretum trains",
+	"description": "Watch the Holiday Garden Railway's model trains.",
+	"category": "outdoor",
+	"location": {
+		"name": "Morris Arboretum & Gardens",
+		"address": "100 E Northwestern Ave, Philadelphia, PA 19118",
+		"url": "https://morrisarboretum.org/see-do/holiday-garden-railway"
+	},
+	"durationMinutes": 120,
+	"participants": ["duey-schultzes"],
+	"variants": [
+		{
+			"name": "Daytime",
+			"description": "Included with general admission, no advance tickets needed.",
+			"estimatedCostDollars": 80,
+			"estimatedMemberCostDollars": 0
+		},
+		{
+			"name": "Nighttime Express",
+			"description": "The railway lit up after dark on select evenings, with timed tickets bought in advance.",
+			"estimatedCostDollars": 80,
+			"estimatedMemberCostDollars": 64
+		}
+	],
+	"traditionLevel": 1,
+	"phases": ["preparation", "growing-anticipation", "the-season"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -33, "toDays": -2 }
+}
