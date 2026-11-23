@@ -12,6 +12,7 @@ const makeActivity = (overrides: Partial<Activity>): Activity => ({
 	participants: [],
 	advanceSteps: [],
 	checklist: [],
+	variants: [],
 	traditionLevel: 0,
 	phases: [],
 	...overrides,

@@ -22,12 +22,22 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
   - `description`: What has to get done, but with more words?
   - `daysBefore`: How many days before the activity does this have to get done?
 - `checklist`: Are there any sub-components of the activity that deserve to be tracked in isolation.
+- `variants`: What are the different ways we could do this? Each one is a [variant](#variant).
 - `traditionLevel`: How important is this activity, on a scale of 0 to 5, in terms of desired routine frequency over a person's life.
 - `phases`: In which phase(s) of `december` would it be acceptable to hold this activity?
 - `sweetSpot`: What's the ideal proximity to a particular date?
   - `relativeTo`: The date that defines the sweet spot range.
   - `fromDays`: The earliest day, relative to the central date, that it would still be OK to do this activity.
   - `toDays`: The latest day, relative to the central date, that it would still be OK to do this activity.
+
+## [Variant](../src/lib/schemas/variant.ts)
+
+One way to do an [activity](#activity) that can be done more than one way, such as somewhere else or for a different price.
+
+- `name`: What do we call this version of the activity?
+- `description`: What makes this version different?
+- `location`: Where do we have to go to do it this way? A [location](#location).
+- `estimatedCostDollars`: How much does doing it this way set us back?
 
 ## [Shopping Location](../src/lib/schemas/shopping-location.ts)
 
@@ -37,7 +47,7 @@ We do be buying things. A shopping location is a [location](#location) with one 
 
 ## [Location](../src/lib/schemas/location.ts)
 
-A place we go, for an activity or to shop.
+A place we go, for an activity, a variant, or to shop.
 
 - `name`: What we call the place.
 - `address`: Where in the world is it?

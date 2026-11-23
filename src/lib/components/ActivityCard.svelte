@@ -72,6 +72,34 @@
 			{/each}
 		</ul>
 	{/if}
+	{#if activity.variants.length > 0}
+		<h3>Variants</h3>
+		<ul>
+			{#each activity.variants as variant (variant.name)}
+				<li>
+					{variant.name}
+					{#if variant.description !== undefined}
+						<p>{variant.description}</p>
+					{/if}
+					<dl>
+						{#if variant.location !== undefined}
+							<dt>Location</dt>
+							<dd>
+								{variant.location.name}
+								{#if variant.location.address !== undefined}
+									<address>{variant.location.address}</address>
+								{/if}
+							</dd>
+						{/if}
+						{#if variant.estimatedCostDollars !== undefined}
+							<dt>Estimated cost</dt>
+							<dd>${variant.estimatedCostDollars}</dd>
+						{/if}
+					</dl>
+				</li>
+			{/each}
+		</ul>
+	{/if}
 	{#if activity.checklist.length > 0}
 		<h3>Checklist</h3>
 		<ul>
