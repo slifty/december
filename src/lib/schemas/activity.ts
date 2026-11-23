@@ -4,6 +4,7 @@ import { categorySchema } from "./category.ts";
 import { locationSchema } from "./location.ts";
 import { participantSchema } from "./participant.ts";
 import { phaseIdSchema } from "./phase.ts";
+import { variantSchema } from "./variant.ts";
 
 const MIN_TRADITION_LEVEL = 0;
 const MAX_TRADITION_LEVEL = 5;
@@ -27,6 +28,7 @@ export const activitySchema = z.strictObject({
 		)
 		.default([]),
 	checklist: z.array(z.string().min(1)).default([]),
+	variants: z.array(variantSchema).default([]),
 	traditionLevel: z.int().min(MIN_TRADITION_LEVEL).max(MAX_TRADITION_LEVEL),
 	phases: z.array(phaseIdSchema),
 	sweetSpot: z

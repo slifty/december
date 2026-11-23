@@ -17,6 +17,7 @@ describe("activitySchema", () => {
 	it("accepts a complete activity and defaults the lists", () => {
 		const activity = activitySchema.parse(validActivity);
 		expect(activity.checklist).toEqual([]);
+		expect(activity.variants).toEqual([]);
 		expect(activity.advanceSteps).toHaveLength(1);
 	});
 
@@ -38,6 +39,23 @@ describe("activitySchema", () => {
 			activitySchema.safeParse({
 				...validActivity,
 				location: { name: "TEST place", url: "https://example.com" },
+			}).success,
+		).toBe(true);
+	});
+
+	it("accepts an activity with variants", () => {
+		expect(
+			activitySchema.safeParse({
+				...validActivity,
+				variants: [
+					{
+						name: "TEST variant",
+						description: "TEST description",
+						location: { name: "TEST place" },
+						estimatedCostDollars: 50,
+					},
+					{ name: "TEST bare variant" },
+				],
 			}).success,
 		).toBe(true);
 	});
@@ -65,6 +83,11 @@ describe("activitySchema", () => {
 			{ sweetSpot: { relativeTo: "13-01", fromDays: -7, toDays: -1 } },
 		],
 		["a location with no name", { location: { url: "https://example.com" } }],
+		["a variant with no name", { variants: [{ estimatedCostDollars: 50 }] }],
+		[
+			"a variant with a field the schema doesn't know",
+			{ variants: [{ name: "TEST variant", chosen: true }] },
+		],
 		["a field the schema doesn't know", { done: true }],
 	])("rejects %s", (_, override) => {
 		expect(
