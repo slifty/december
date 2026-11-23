@@ -9,6 +9,9 @@
 	},
 	"durationMinutes": 120,
 	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{ "title": "Make hot chocolate and put it in thermoses", "daysBefore": 0 }
+	],
 	"variants": [
 		{
 			"name": "Daytime",
