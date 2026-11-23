@@ -1,0 +1,17 @@
+{
+	"title": "Day trip to Longwood Gardens",
+	"description": "Spend the day visiting Longwood Gardens.",
+	"category": "outdoor",
+	"location": {
+		"name": "Longwood Gardens",
+		"address": "1001 Longwood Rd, Kennett Square, PA 19348",
+		"url": "https://longwoodgardens.org"
+	},
+	"durationMinutes": 480,
+	"estimatedCostDollars": 200,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [{ "title": "Book tickets", "daysBefore": 28 }],
+	"traditionLevel": 1,
+	"phases": ["growing-anticipation", "the-season", "new-year"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -24, "toDays": 16 }
+}
