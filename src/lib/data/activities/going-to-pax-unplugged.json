@@ -1,0 +1,38 @@
+{
+	"title": "Going to PAX Unplugged",
+	"description": "Attend PAX Unplugged, Penny Arcade's three-day tabletop gaming convention.",
+	"category": "indoor",
+	"location": {
+		"name": "Pennsylvania Convention Center",
+		"address": "1101 Arch St, Philadelphia, PA 19107",
+		"url": "https://unplugged.paxsite.com"
+	},
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{ "title": "Buy badges", "daysBefore": 90 },
+		{ "title": "Check out the full schedule", "daysBefore": 1 }
+	],
+	"checklist": [
+		"Play a board game",
+		"Walk around the convention center",
+		"Look at expensive dice",
+		"Sneakily pick out a present to buy"
+	],
+	"variants": [
+		{
+			"name": "Three-day pass",
+			"description": "Badges for all three days of the convention.",
+			"estimatedCostDollars": 217
+		},
+		{
+			"name": "Sunday only",
+			"description": "Single-day badges for the shorter final day.",
+			"estimatedCostDollars": 110
+		}
+	],
+	"traditionLevel": 3,
+	"phases": ["preparation", "growing-anticipation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -35, "toDays": -17 },
+	"narrowlyScheduled": true,
+	"timesOfDay": ["morning", "afternoon", "evening"]
+}
