@@ -10,6 +10,10 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
 - `description`: What exactly IS this activity, anyway? How would you describe it to someone?
 - `category`: What type of activity is this? How does it fit into an informational hierarchy when compared to other activities?
 - `date`: Does this activity fall on a specific day?
+- `location`: Where do we have to go to do this?
+  - `name`: What do we call the place?
+  - `address`: Where in the world is it?
+  - `url`: Where on the internet is it?
 - `durationMinutes`: Exactly how long is this going to last, anyway?
 - `estimatedCostDollars`: How much is this going to set us back on our revenue goals for the year?
 - `participants`: Who are you roping into this?
@@ -27,12 +31,17 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
 
 ## [Shopping Location](../src/lib/schemas/shopping-location.ts)
 
-We do be buying things.
+We do be buying things. A shopping location is a [location](#location) with one more attribute:
 
-- `name`: A store we go to to buy things
 - `goFor`: A description of what we usually try to buy here.
-- `address`: Where in the world is this store?
-- `url`: Where on the internet is this store?
+
+## [Location](../src/lib/schemas/location.ts)
+
+A place we go, for an activity or to shop.
+
+- `name`: What we call the place.
+- `address`: Where in the world is it?
+- `url`: Where on the internet is it?
 
 ## [Phase](../src/lib/schemas/phase.ts)
 

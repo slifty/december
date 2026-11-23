@@ -25,6 +25,15 @@
 			<dt>Date</dt>
 			<dd>{activity.date}</dd>
 		{/if}
+		{#if activity.location !== undefined}
+			<dt>Location</dt>
+			<dd>
+				{activity.location.name}
+				{#if activity.location.address !== undefined}
+					<address>{activity.location.address}</address>
+				{/if}
+			</dd>
+		{/if}
 		{#if activity.sweetSpot !== undefined}
 			<dt>Sweet spot</dt>
 			<dd>

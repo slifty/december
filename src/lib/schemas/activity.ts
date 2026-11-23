@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { monthDaySchema } from "../dates.ts";
 import { categorySchema } from "./category.ts";
+import { locationSchema } from "./location.ts";
 import { participantSchema } from "./participant.ts";
 import { phaseIdSchema } from "./phase.ts";
 
@@ -12,6 +13,7 @@ export const activitySchema = z.strictObject({
 	description: z.string().min(1).optional(),
 	category: categorySchema,
 	date: monthDaySchema.optional(),
+	location: locationSchema.optional(),
 	durationMinutes: z.int().positive().optional(),
 	estimatedCostDollars: z.int().nonnegative().optional(),
 	participants: z.array(participantSchema),
