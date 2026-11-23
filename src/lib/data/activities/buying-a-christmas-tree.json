@@ -1,0 +1,27 @@
+{
+	"title": "Buying a Christmas tree",
+	"description": "Pick out a tree and a wreath, bring them home, and put the tree up.",
+	"category": "outdoor",
+	"location": {
+		"name": "Ivy Hill Christmas Tree Lot",
+		"address": "717 Ivy Hill Rd, Philadelphia, PA 19150"
+	},
+	"estimatedCostDollars": 125,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{ "title": "Get out the Christmas tree stand", "daysBefore": 1 },
+		{ "title": "Get a towel to put under the stand", "daysBefore": 1 },
+		{ "title": "Get out the tree skirt", "daysBefore": 1 },
+		{ "title": "Get a pitcher for water", "daysBefore": 1 },
+		{ "title": "Buy the tree", "daysBefore": 0 },
+		{
+			"title": "Put the tree up",
+			"description": "Fill the stand with water.",
+			"daysBefore": 0
+		}
+	],
+	"checklist": ["Christmas tree", "Wreath"],
+	"traditionLevel": 5,
+	"phases": ["growing-anticipation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -24, "toDays": -20 }
+}
