@@ -1,0 +1,20 @@
+{
+	"title": "Visiting the Philadelphia winter market",
+	"description": "Shop for gifts at the holiday markets around City Hall.",
+	"category": "outdoor",
+	"location": {
+		"name": "Philadelphia City Hall",
+		"address": "1400 John F Kennedy Blvd, Philadelphia, PA 19107"
+	},
+	"durationMinutes": 120,
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"checklist": [
+		"Browse Christmas Village in LOVE Park",
+		"Browse the Made in Philadelphia market in Dilworth Park"
+	],
+	"traditionLevel": 2,
+	"phases": ["growing-anticipation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -24, "toDays": -6 },
+	"timesOfDay": ["afternoon", "evening"]
+}
