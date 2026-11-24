@@ -1,8 +1,39 @@
 <script lang="ts">
+	import { onMount } from "svelte";
 	import { PHASES } from "../schemas/phase.ts";
+	import type { ResolvedPathname } from "$app/types";
 	import type { Activity } from "../schemas/activity.ts";
+	import { goto } from "$app/navigation";
+	import { resolve } from "$app/paths";
+	import { page } from "$app/state";
 
-	const { activity }: { activity: Activity } = $props();
+	const { id, activity }: { id: string; activity: Activity } = $props();
+
+	let open = $state(false);
+
+	const isLinked = (): boolean => location.hash === `#${id}`;
+
+	const openIfLinked = (): void => {
+		if (isLinked()) {
+			open = true;
+		}
+	};
+
+	const replaceUrl = (url: ResolvedPathname): void => {
+		void goto(url, { replace: true, shallow: true, state: page.state });
+	};
+
+	const handleToggle = (
+		event: Event & { currentTarget: HTMLDetailsElement },
+	): void => {
+		if (event.currentTarget.open && !isLinked()) {
+			replaceUrl(resolve(`/#${id}`));
+		} else if (!event.currentTarget.open && isLinked()) {
+			replaceUrl(resolve("/"));
+		}
+	};
+
+	onMount(openIfLinked);
 
 	const describeOffset = (days: number): string => {
 		if (days === 0) {
@@ -13,7 +44,9 @@
 	};
 </script>
 
-<details class="activity-card">
+<svelte:window onhashchange={openIfLinked} />
+
+<details class="activity-card" {id} bind:open ontoggle={handleToggle}>
 	<summary>{activity.title}</summary>
 	{#if activity.description !== undefined}
 		<p>{activity.description}</p>

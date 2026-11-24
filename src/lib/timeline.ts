@@ -39,7 +39,9 @@ export const activityTimelineDay = (activity: Activity): number | undefined => {
 	return phaseStart === undefined ? undefined : timelineDay(phaseStart);
 };
 
-export const sortByTimeline = (activities: readonly Activity[]): Activity[] =>
+export const sortByTimeline = <T extends Activity>(
+	activities: readonly T[],
+): T[] =>
 	activities.toSorted((a, b) => {
 		const dayA = activityTimelineDay(a) ?? UNPLACED;
 		const dayB = activityTimelineDay(b) ?? UNPLACED;
