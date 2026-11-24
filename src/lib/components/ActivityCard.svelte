@@ -102,7 +102,7 @@
 {/snippet}
 
 <details class="activity-card" {id} bind:open ontoggle={handleToggle}>
-	<summary>
+	<summary data-snow-ledge={open ? undefined : id}>
 		{#if when !== undefined}
 			<span class="when">{when}</span>
 		{/if}

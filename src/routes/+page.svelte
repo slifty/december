@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ActivityCard from "#lib/components/ActivityCard.svelte";
+	import Snow from "#lib/components/Snow.svelte";
 	import { ACTIVITIES } from "#lib/data/activities.ts";
 	import { sortByTimeline } from "#lib/timeline.ts";
 
@@ -16,3 +17,5 @@
 {#each activities as activity (activity.id)}
 	<ActivityCard id={activity.id} {activity} />
 {/each}
+
+<Snow />

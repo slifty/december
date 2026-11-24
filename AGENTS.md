@@ -58,6 +58,8 @@ src/
     ├── dates.ts       # Year-less MM-DD dates
     ├── format.ts      # Turns data values into display text
     ├── schemas/       # Zod schemas for each entity, and their inferred types
+    ├── snow.ts        # Snowfall that piles up on closed activity headers
+    ├── snowflake.ts   # How a single flake moves, lands, and falls off
     └── timeline.ts    # Orders activities by when in the season they happen
 ```
 
@@ -65,7 +67,8 @@ src/
 on white. The visual design hasn't been done yet, so don't add colours, custom
 fonts, or decorative styling. Borders and black or grey header bars are fine
 where they show how information is grouped. Add only the layout a feature
-needs to work.
+needs to work. The opt-in snow is a deliberate exception: it is meant to get
+in the way.
 
 ## Data
 
