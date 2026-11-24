@@ -56,13 +56,16 @@ src/
     ├── components/    # Svelte components
     ├── data/          # One JSON file per entry, loaded and validated
     ├── dates.ts       # Year-less MM-DD dates
+    ├── format.ts      # Turns data values into display text
     ├── schemas/       # Zod schemas for each entity, and their inferred types
     └── timeline.ts    # Orders activities by when in the season they happen
 ```
 
 **Styling is deliberately plain.** Browser defaults, a sans-serif font, black
 on white. The visual design hasn't been done yet, so don't add colours, custom
-fonts, or decorative styling. Add only the layout a feature needs to work.
+fonts, or decorative styling. Borders and black or grey header bars are fine
+where they show how information is grouped. Add only the layout a feature
+needs to work.
 
 ## Data
 

@@ -8,7 +8,7 @@ import { timeOfDaySchema } from "./time-of-day.ts";
 import { variantSchema } from "./variant.ts";
 
 const MIN_TRADITION_LEVEL = 0;
-const MAX_TRADITION_LEVEL = 5;
+export const MAX_TRADITION_LEVEL = 5;
 
 export const activitySchema = z.strictObject({
 	title: z.string().min(1),

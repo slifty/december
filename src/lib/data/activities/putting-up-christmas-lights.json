@@ -40,5 +40,5 @@
 	],
 	"traditionLevel": 5,
 	"phases": ["preparation"],
-	"sweetSpot": { "relativeTo": "12-25", "fromDays": -33, "toDays": -24 }
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -27, "toDays": -24 }
 }
