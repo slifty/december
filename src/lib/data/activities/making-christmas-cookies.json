@@ -1,0 +1,30 @@
+{
+	"title": "Making Christmas cookies",
+	"description": "Bake a batch of each of our Christmas cookies.",
+	"category": "home",
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{
+			"title": "Check the pantry against the recipes",
+			"daysBefore": 7
+		},
+		{ "title": "Buy missing ingredients", "daysBefore": 3 },
+		{ "title": "Soften the butter", "daysBefore": 0 }
+	],
+	"checklist": [
+		"Candy cane sugar cookies",
+		"Thumbprint (raspberry)",
+		"Thumbprint (apricot)",
+		"Gingerbread",
+		"Russian tea cake",
+		"Almond dipped in chocolate",
+		"Sicilian white",
+		"Macaroons (chocolate)",
+		"Macaroons (coconut)",
+		"Kanelkakor"
+	],
+	"traditionLevel": 5,
+	"phases": ["growing-anticipation", "the-season"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -14, "toDays": -3 }
+}
