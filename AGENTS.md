@@ -75,6 +75,9 @@ or changes purpose.
 
 - **Files, not a database.** Data is JSON in the repository, validated by the
   schemas at build time.
+- **File names are ids.** An activity's file name, without `.json`, is its id
+  and the fragment that links to it on the site, so renaming a file breaks
+  links to it.
 - **Describe the activity, not one year of it.** The same data works year
   after year, so schemas hold no state (done, skipped, watched, actual cost)
   and no date carries a year: dates are `MM-DD`, and timing is counted in days

@@ -13,6 +13,6 @@
 <h1>December</h1>
 <p>This stuff doesn't all just happen by itself...</p>
 
-{#each activities as activity (activity.title)}
-	<ActivityCard {activity} />
+{#each activities as activity (activity.id)}
+	<ActivityCard id={activity.id} {activity} />
 {/each}
