@@ -1,0 +1,11 @@
+{
+	"title": "Making popcorn balls",
+	"category": "home",
+	"durationMinutes": 60,
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [{ "title": "Buy ingredients", "daysBefore": 3 }],
+	"traditionLevel": 1,
+	"phases": ["the-season", "new-year"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -5, "toDays": 9 }
+}
