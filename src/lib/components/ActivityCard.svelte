@@ -142,6 +142,10 @@
 					<dt>Scheduling</dt>
 					<dd>Only on set dates</dd>
 				{/if}
+				{#if activity.ongoing}
+					<dt>Scheduling</dt>
+					<dd>Ongoing</dd>
+				{/if}
 				<dt>Phases</dt>
 				<dd>
 					{activity.phases.map((phaseId) => PHASES[phaseId].name).join(", ")}
