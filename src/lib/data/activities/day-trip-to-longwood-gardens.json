@@ -9,6 +9,7 @@
 	},
 	"durationMinutes": 480,
 	"estimatedCostDollars": 200,
+	"estimatedMemberCostDollars": 0,
 	"participants": ["duey-schultzes"],
 	"advanceSteps": [{ "title": "Book tickets", "daysBefore": 28 }],
 	"traditionLevel": 1,
