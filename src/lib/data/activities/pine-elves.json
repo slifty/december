@@ -1,0 +1,14 @@
+{
+	"title": "Pine elves",
+	"description": "This activity involves collecting fallen pine needles from the floor using small spoons for some reason. I don't completely understand it. Unclear if the needles are the pine elves, the needles are being collected for the pine elves, or the kids are being pine elves themselves.",
+	"category": "home",
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{ "title": "Pilfer teaspoons from the kitchen", "daysBefore": 0 }
+	],
+	"traditionLevel": 5,
+	"phases": ["growing-anticipation", "the-season", "new-year"],
+	"sweetSpot": { "relativeTo": "01-01", "fromDays": -31, "toDays": 0 },
+	"ongoing": true
+}
