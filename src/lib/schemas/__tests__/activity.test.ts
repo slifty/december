@@ -21,12 +21,19 @@ describe("activitySchema", () => {
 		expect(activity.variants).toEqual([]);
 		expect(activity.advanceSteps).toHaveLength(1);
 		expect(activity.narrowlyScheduled).toBe(false);
+		expect(activity.ongoing).toBe(false);
 	});
 
 	it("accepts a narrowly scheduled activity", () => {
 		expect(
 			activitySchema.parse({ ...validActivity, narrowlyScheduled: true })
 				.narrowlyScheduled,
+		).toBe(true);
+	});
+
+	it("accepts an ongoing activity", () => {
+		expect(
+			activitySchema.parse({ ...validActivity, ongoing: true }).ongoing,
 		).toBe(true);
 	});
 

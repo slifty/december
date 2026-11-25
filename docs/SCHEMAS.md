@@ -31,6 +31,7 @@ An `Activity` is something that someone wants to do. Here are the attributes tha
   - `fromDays`: The earliest day, relative to the central date, that it would still be OK to do this activity.
   - `toDays`: The latest day, relative to the central date, that it would still be OK to do this activity.
 - `narrowlyScheduled`: Does this only happen on a single day or weekend, rather than whenever we choose?
+- `ongoing`: Does this happen within a single day, or over time?
 - `timesOfDay`: When in the day can we do this? One or more [times of day](#time-of-day).
 
 ## [Variant](../src/lib/schemas/variant.ts)

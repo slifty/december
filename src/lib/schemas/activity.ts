@@ -44,6 +44,7 @@ export const activitySchema = z.strictObject({
 		})
 		.optional(),
 	narrowlyScheduled: z.boolean().default(false),
+	ongoing: z.boolean().default(false),
 	timesOfDay: z.array(timeOfDaySchema).min(1).optional(),
 });
 
