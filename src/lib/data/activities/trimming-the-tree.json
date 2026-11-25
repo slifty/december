@@ -1,0 +1,26 @@
+{
+	"title": "Trimming the tree",
+	"description": "Decorate the tree and set up the rest of the living room.",
+	"category": "home",
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes"],
+	"advanceSteps": [
+		{ "title": "Bake fresh cookies", "daysBefore": 0 },
+		{
+			"title": "Bring the ornament bins up from the basement",
+			"daysBefore": 0
+		},
+		{ "title": "Set up a playlist", "daysBefore": 0 }
+	],
+	"checklist": [
+		"Elephant god Christmas topper",
+		"Hang stockings",
+		"Set up the Christmas village",
+		"Hide gnomes around the living room",
+		"Put lights on the tree",
+		"Put garland on the tree"
+	],
+	"traditionLevel": 5,
+	"phases": ["growing-anticipation"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -24, "toDays": -19 }
+}
