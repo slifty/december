@@ -1,0 +1,21 @@
+{
+	"title": "Making gingerbread houses",
+	"category": "home",
+	"durationMinutes": 180,
+	"estimatedCostDollars": 0,
+	"participants": ["duey-schultzes", "darraghs", "webb-dueys"],
+	"advanceSteps": [
+		{
+			"title": "Shop for decorations and gingerbread dough ingredients",
+			"daysBefore": 4
+		},
+		{ "title": "Select a template", "daysBefore": 1 },
+		{ "title": "Bake the pieces", "daysBefore": 1 },
+		{ "title": "Clean the table", "daysBefore": 0 },
+		{ "title": "Prepare construction surfaces", "daysBefore": 0 },
+		{ "title": "Make the icing", "daysBefore": 0 }
+	],
+	"traditionLevel": 4,
+	"phases": ["growing-anticipation", "the-season"],
+	"sweetSpot": { "relativeTo": "12-25", "fromDays": -14, "toDays": 3 }
+}
